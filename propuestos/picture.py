@@ -78,3 +78,17 @@ class Picture:
             la cantidad de veces que indique el valor de n """
         newFigure = self.img * n
         return Picture(newFigure)
+    
+    #Extra
+    def rotate(self):
+        """Devuelve una figura rotada en 90 grados """
+        filas = range(len(self.img))
+        columnas = range(len(self.img[0]))
+
+        newFigure = []
+        for i in filas:
+            string = ""
+            for j in columnas:
+                string += self.img[j][-i]
+            newFigure.append(string)
+        return Picture(newFigure)

@@ -39,3 +39,28 @@ class Picture:
         for i in range(len(self.img)):
             joined.append(self.img[i]+p.img[i])
         return Picture(joined)
+
+    def up(self, p):
+        """ Devuelve una nueva figura poniendo la figura actual arriba
+            de la figura p """
+        newFigure = self.img
+        for value in p.img:
+            newFigure.append(value)
+        return Picture(newFigure)
+
+    def under(self, p):
+        """ Devuelve una nueva figura poniendo la figura p sobre la
+            figura actual """
+        filas = range(len(self.img))
+        columnas = range(len(self.img[0]))
+
+        newFigure = []
+        for i in filas:
+            string = ""
+            for j in columnas:
+                if (self.img[i][j] != p.img[i][j] and p.img[i][j] != " "):
+                    string += p.img[i][j]
+                else:
+                    string += self.img[i][j]
+            newFigure.append(string)
+        return Picture(newFigure)

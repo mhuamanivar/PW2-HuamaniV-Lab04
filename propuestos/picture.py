@@ -64,3 +64,17 @@ class Picture:
                     string += self.img[i][j]
             newFigure.append(string)
         return Picture(newFigure)
+    
+    def horizontalRepeat(self, n):
+        """ Devuelve una nueva figura repitiendo la figura actual al costado
+            la cantidad de veces que indique el valor de n """
+        newFigure = []
+        for value in self.img:
+            newFigure.append(value*n)
+        return Picture(newFigure)
+
+    def verticalRepeat(self, n):
+        """ Devuelve una nueva figura repitiendo la figura actual debajo,
+            la cantidad de veces que indique el valor de n """
+        newFigure = self.img * n
+        return Picture(newFigure)

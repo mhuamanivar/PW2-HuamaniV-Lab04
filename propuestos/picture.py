@@ -1,3 +1,6 @@
+# Melsy Melany Huamaní Vargas
+# Pw2 - Laboratorio 04
+
 from colors import *
 
 class Picture:

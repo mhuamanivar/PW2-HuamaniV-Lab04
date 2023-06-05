@@ -4,8 +4,8 @@
 from interpreter import draw
 from chessPictures import *
 
-squares1 = square.up(square.negative())
-squares2 = square.negative().up(square)
+squares1 = square.negative().up(square)
+squares2 = square.up(square.negative())
 
 finalSquares = squares1.join(squares2)
 

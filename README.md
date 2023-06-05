@@ -441,7 +441,7 @@ Luego se ingresa a una carpeta ya creada llamada "propuestos", donde (como dice 
       Se crea un nuevo arreglo "newFigure" que almacena el arreglo del atributo ``img`` del picture que es recibido como argumento "p", luego se le va añadiendo cada elemento del arreglo ``img`` del picture actual, para que en "newFigure", el picture "p" se muestre encima del picture actual.
       ```python
       def up(self, p):
-          newFigure = p.img
+          newFigure = p.img[:]
           for value in self.img:
               newFigure.append(value)
           return Picture(newFigure)
@@ -516,7 +516,7 @@ Luego se ingresa a una carpeta ya creada llamada "propuestos", donde (como dice 
       Se crea un nuevo arreglo donde multiplica todo el arreglo del atributo ``img`` del picture, es por ello que en el resultado se ve de manera repetida verticalmente.
       ```python
       def verticalRepeat(self, n):
-          newFigure = self.img * n
+          newFigure = self.img[:] * n
           return Picture(newFigure)
       ```
         - Para probar utilizamos el siguiente comando
@@ -781,3 +781,47 @@ Luego se ingresa a una carpeta ya creada llamada "propuestos", donde (como dice 
           Hello from the pygame community. https://www.pygame.org/contribute.html
           ```
           <img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab04/main/imagenes/p_ej2extra.png" style="width:50%"/><br/><br/>
+
+<br/>
+
+##
+## CUESTIONARIO
+
+- **¿Qué son los archivos *.pyc?**
+
+  Son los archivos compilados de Python, es una versión de un módulo que ya ha sido compilado en bytes con éxito. Sin embargo, si la compilación falla, entonces el archivo ``.pyc`` sera reconocido como inválido. En los archivos ``.pyc`` se deben tener en cuenta ciertas características:
+  
+    - Cuando el intérprete de Python es invocado con flag ``-o``, entonces los archivos que son compilados son optimizados y eliminan datos no importantes, por lo que ya no son ``.pyc``, sino que son ``.pyo``.
+    - El programa no compila más rápido si es que ejecutar los ``.pyc``, lo único en lo que son rápidos es la velocidad con la que se cargan.
+    - Es posible que existan archivos ``.pyc``, sin la necesidad de haber modulos con el nombre que tiene el ``.pyc``, esto puede usarse para distribuir una librería de Python.
+    - El módulo ``compile all`` puede crear archivos ``.pyc`` para todos los módulos de un directorio.
+    - Python verifica la fecha de modificación del código con la versión compilada para ver si está desactualizada y necesita ser recompilado, ya que en los archivos ``.pyc`` se puede visualizar la versión con la que ha sido compilado el módulo.
+
+  <br/>
+- **¿Para qué sirve el directorio pycache?**
+
+  El directorio ``__pycache__`` sirve para acelerar la carga de módulos, puesto que Python almacena en caché la versión compilada de cada módulo bajo el nombre de ``nombre_de_modulo.version.pyc``, donde se muestra la versión del formato con el que se ha compilado el archivo, el cual generalmente es el número de versíon de Python. No se recomienda borrar a menudo estos archivos ni suprimir la creación de estos ya que como han sido compilados, se estaría restando a su función principal que es acelerar el proceso de la carga de módulos.
+
+  <br/>
+- **¿Cuáles son los usos y lo que representa el subguión en Python?**
+
+  El subguión tiene una gran variedad de usos en Python, además de una representación cuando se habla de atributos o métodos de una clase. Entre ellos tenemos:
+
+    - Para omitir valores: Es decir, podemos usarlo como una variable ``_`` la cual solo la utilizaremos una vez, por ejemplo, en las iteraciones del ``for``. Por otro lado, cuando tenemos muchos valores y queremos seleccionar solo unos cuantos e ignorar un rango de ellos, entonces podemos utilizar ``*_``.
+    - Como placeholder: Esto quiere decir que cuando nos encontremos en el intérprete de Python podemos guardar la anterior respuesta para utilizarla en una siguiente operación.
+    - Como namespace: Cuando queremos utilizar un nombre para una variable, pero esta ya es una palabra reservada para Python, entonces podemos utilzar ``_`` al final del nombre de la palabra.
+    - Para números: Podemos utilizar ``_`` para expresar números muy grandes, y queremos separar cada tres cifrar para un mejor entendimiento.
+    - Representación en clases: Cuando utilizamos ``_`` dos veces antes y después del nombre de un atributo, de manera ``__nombre_de_atributo__``, entonces esto representa un atributo privado de la clase. Por otro lado, para los métodos, al utilizar de la siguiente manera ``__nombre_del_metodo__`` quiere decir que estos son métodos que se pueden sobreescribir facilmente en las clases que heredan, siendo esta usada en la clase padre.
+
+  <br/>
+
+<br/>
+
+##
+## REFERENCIAS
+
+- https://www.w3schools.com/python/python_reference.asp
+- https://docs.python.org/3/tutorial/
+- https://docs.python.org/release/1.5.1p1/tut/node43.html
+- https://docs.python.org/3/tutorial/modules.html
+- https://pywombat.com/articles/guion-bajo-python

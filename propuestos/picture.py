@@ -46,7 +46,7 @@ class Picture:
     def up(self, p):
         """ Devuelve una nueva figura poniendo la figura recibida como argumento
             encima de la figura actual """
-        newFigure = p.img
+        newFigure = p.img[:]
         for value in self.img:
             newFigure.append(value)
         return Picture(newFigure)
@@ -79,7 +79,7 @@ class Picture:
     def verticalRepeat(self, n):
         """ Devuelve una nueva figura repitiendo la figura actual debajo,
             la cantidad de veces que indique el valor de n """
-        newFigure = self.img * n
+        newFigure = self.img[:] * n
         return Picture(newFigure)
     
     #Extra

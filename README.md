@@ -801,7 +801,7 @@ Luego se ingresa a una carpeta ya creada llamada "propuestos", donde (como dice 
 ##
 ## CUESTIONARIO
 
-- **¿Qué son los archivos *.pyc?**
+- **¿Qué son los archivos ``.pyc``?**
 
   Son los archivos compilados de Python, es una versión de un módulo que ya ha sido compilado en bytes con éxito. Sin embargo, si la compilación falla, entonces el archivo ``.pyc`` sera reconocido como inválido. En los archivos ``.pyc`` se deben tener en cuenta ciertas características:
   

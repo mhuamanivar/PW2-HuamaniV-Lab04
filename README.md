@@ -57,6 +57,14 @@
 ##
 ## SOLUCIÓN Y RESULTADOS
 
+<br/>
+
+**ENLACE GITHUB Y GIT**
+
+Este trabajo se está presentando en el Github: https://github.com/mhuamanivar/PW2-HuamaniV-Lab04 y el .git es: https://github.com/mhuamanivar/PW2-HuamaniV-Lab04.git.
+
+<br/>
+
 **INSTALACIÓN PARA EL USO DE PYTHON**
 
 Se utiliza el subsistema Ubuntu 22.04.2 LTS a través de WSL (Windows Subsystem for Linux) para usar Python y las herramientas necesarias para su uso en estos ejercicios.<br/><br/>

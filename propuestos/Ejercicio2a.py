@@ -10,4 +10,4 @@ bKnight = knight.negative()
 firstKnights = wKnight.join(bKnight)
 secondKnights = bKnight.join(wKnight)
 
-draw(firstKnights.up(secondKnights))
+draw(secondKnights.up(firstKnights))

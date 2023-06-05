@@ -782,7 +782,13 @@ Luego se ingresa a una carpeta ya creada llamada "propuestos", donde (como dice 
           ```
           <img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab04/main/imagenes/p_ej2extra.png" style="width:50%"/><br/><br/>
 
+
+##
+## COMMITS MÁS IMPORTANTES
+
 <br/>
+
+<img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab04/main/imagenes/commits.png" style="width:70%"/><br/><br/>
 
 ##
 ## CUESTIONARIO

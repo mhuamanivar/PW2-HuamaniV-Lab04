@@ -13,11 +13,11 @@ bPawns = wPawns.negative()
 wPieces = bSquare.under(rock).join(wSquare.under(knight)).join(bSquare.under(bishop)).join(wSquare.under(queen)).join(bSquare.under(king)).join(wSquare.under(bishop)).join(bSquare.under(knight)).join(wSquare.under(rock))
 bPieces = wPieces.negative()
 
-squares1 = wSquare.up(bSquare)
-squares2 = bSquare.up(wSquare)
+squares1 = bSquare.up(wSquare)
+squares2 = wSquare.up(bSquare)
 
 finalSquares = squares1.join(squares2).verticalRepeat(2).horizontalRepeat(4)
 
-tabla = bPieces.up(bPawns.up(finalSquares.up(wPawns.up(wPieces))))
+tabla = wPieces.up(wPawns.up(finalSquares.up(bPawns.up(bPieces))))
 
 draw(tabla.rotate())

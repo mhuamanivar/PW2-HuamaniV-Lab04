@@ -44,10 +44,10 @@ class Picture:
         return Picture(joined)
 
     def up(self, p):
-        """ Devuelve una nueva figura poniendo la figura actual arriba
-            de la figura p """
-        newFigure = self.img
-        for value in p.img:
+        """ Devuelve una nueva figura poniendo la figura recibida como argumento
+            encima de la figura actual """
+        newFigure = p.img
+        for value in self.img:
             newFigure.append(value)
         return Picture(newFigure)
 

@@ -796,7 +796,9 @@ Luego se ingresa a una carpeta ya creada llamada "propuestos", donde (como dice 
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab04/main/imagenes/commits.png" style="width:70%"/><br/><br/>
+<img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab04/main/imagenes/commits1.png" style="width:70%"/><br/><br/>
+<img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab04/main/imagenes/commits2.png" style="width:70%"/><br/><br/>
+<img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab04/main/imagenes/commits3.png" style="width:70%"/><br/><br/>
 
 ##
 ## CUESTIONARIO
